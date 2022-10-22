@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+@layer components {
+    .check {
+        @apply bg-gradient-to-br from-grfrom to-grto flex justify-center items-center border-[1px] border-gray-300 rounded-full w-5 h-5 cursor-pointer
+    }
+    .uncheck {
+        @apply flex justify-center items-center border-[1px] border-gray-300 dark:border-darkDgBlue hover:border-r-grto hover:border-b-grto hover:border-l-grfrom hover:border-t-grfrom rounded-full w-5 h-5 cursor-pointer
+    }
+}
