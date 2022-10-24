@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={`${theme} h-[100vh] bg-lightVlGray dark:bg-darkVddBlue relative`}>
+      <div className={`${theme} h-[100vh] bg-lightVlGray dark:bg-darkVddBlue`}>
         <Navbar />
         <Todos />
       </div>

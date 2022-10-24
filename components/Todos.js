@@ -30,9 +30,9 @@ export default function Todos() {
 
 
   return (
-    <div className="w-[90%] md:w-[50%] m-auto bottom-10 relative">
+    <div className="w-[90%] md:w-[50%] m-auto bottom-5 relative">
         <div className="shadow-xl rounded-lg overflow-hidden">
-            <ul className="flex flex-col gap-1">
+            <ul className="flex flex-col gap-[2px] bg-lightLgBlue/40 dark:bg-darkDgBlue/40">
                 {data.map((todo) => (
                     <li key={todo.id} className="flex items-center px-3 py-4 bg-white dark:bg-darkVddBlue">
                         <span onClick={() => dispatch(completeTodo(todo.id))} className={todo.completed ? 'check' : 'uncheck'}>
