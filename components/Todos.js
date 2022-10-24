@@ -46,7 +46,7 @@ export default function Todos() {
                     <p>{activeTodos.length} items left</p>
                     <div className="items-center hidden md:flex md:gap-5 text-md justify-evenly text-lightDgBlue font-bold">
                         {filters.map((filter) => (
-                            <button className={currentFilter === filter ? "text-brightBlue": "dark:hover:text-darkLgBlue"} onClick={() => changeFilter(filter)}>{filter}</button>
+                            <button key={filter} className={currentFilter === filter ? "text-brightBlue": "dark:hover:text-darkLgBlue"} onClick={() => changeFilter(filter)}>{filter}</button>
                         ))} 
                     </div>
                     <button className="dark:hover:text-darkLgBlue" onClick={() => dispatch(deleteCompletedTodos())}>Clear Completed</button>
@@ -57,7 +57,7 @@ export default function Todos() {
 
             <div className="flex items-center md:hidden px-10 py-4 bg-white dark:bg-darkVddBlue text-md justify-evenly mt-5 shadow-xl rounded text-lightDgBlue font-bold">
                 {filters.map((filter) => (
-                    <button className={currentFilter === filter ? "text-brightBlue": "dark:hover:text-darkLgBlue"} onClick={() => changeFilter(filter)}>{filter}</button>
+                    <button key={filter} className={currentFilter === filter ? "text-brightBlue": "dark:hover:text-darkLgBlue"} onClick={() => changeFilter(filter)}>{filter}</button>
                 ))}
             </div>
             <p className="text-lightDgBlue mt-10 w-[60%] m-auto">Drag and drop to reorder list</p>

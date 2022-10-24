@@ -15,8 +15,8 @@ const themeSlice = createSlice({
             localStorage.setItem('theme', action.payload)
         }
     }
-})
+});
 
-export const { changeTheme } = themeSlice.actions
+export const { changeTheme } = themeSlice.actions;
 
-export default themeSlice.reducer
+export default themeSlice.reducer;

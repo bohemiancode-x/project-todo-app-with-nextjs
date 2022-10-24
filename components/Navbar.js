@@ -18,9 +18,9 @@ export default function Navbar() {
   }
 
   const newTodo = {
-    "content": todo,
-    "id": Math.random(),
-    "completed": false
+    content: todo,
+    id: Math.random(),
+    completed: false
   }
 
   const handleForm = (e) => {
